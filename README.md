@@ -1,81 +1,97 @@
-# Personal Budget App (PBA)
+## Persoonlijke Budget App (PBA)
 
-A web-based personal budget tracking application built with PHP, PDO for database interaction, Bootstrap for responsive UI, and Chart.js for data visualization.
+Een webgebaseerde applicatie voor het bijhouden van persoonlijke budgetten, gebouwd met **PHP**, **PDO** voor database-interactie, **Bootstrap** voor een responsieve gebruikersinterface en **Chart.js** voor datavisualisatie.
 
-## Features
+---
 
-- **User Authentication**: Secure login and registration system.
-- **Dashboard**: Overview of current month's budget, income, expenses, and remaining budget.
-- **Transaction Management**: Add, edit, and delete transactions with categories.
-- **Charts**: Pie chart for expenses by category and bar chart for income vs expenses.
-- **Dark/Light Theme**: Toggle between themes for better user experience.
-- **Responsive Design**: Works on desktop and mobile devices.
+## Kenmerken
 
-## Technologies Used
+- **Gebruikersauthenticatie**: Veilige inlog- en registratiesysteem.
+- **Dashboard**: Overzicht van het budget van de huidige maand, inkomen, uitgaven en resterend budget.
+- **Transactiebeheer**: Voeg transacties toe, bewerk en verwijder ze met categorieën.
+- **Grafieken**: Taartdiagram voor uitgaven per categorie en staafdiagram voor inkomen versus uitgaven.
+- **Donker/Licht Thema**: Wissel tussen thema's voor een betere gebruikerservaring.
+- **Responsief Ontwerp**: Werkt op desktop- en mobiele apparaten.
 
-- **Backend**: PHP 7+ with PDO for MySQL database.
+---
+
+## Gebruikte Technologieën
+
+- **Backend**: PHP 7+ met PDO voor MySQL-database.
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap 5, Chart.js.
 - **Database**: MySQL.
 
-## Installation
+---
 
-1. **Prerequisites**:
-   - PHP 7.0 or higher
-   - MySQL database
-   - Web server (e.g., Apache)
+## Installatie
 
-2. **Clone or Download** the project files to your web server's root directory.
+1. **Vereisten**:
+   - PHP 7.0 of hoger
+   - MySQL-database
+   - Webserver (bijv. Apache)
+   
+2. **Kloon of Download** de projectbestanden naar de rootdirectory van uw webserver.
 
 3. **Database Setup**:
-   - Create a MySQL database.
-   - Run the `import.sql` script to create tables and insert sample data.
-   - Update `db.php` with your database credentials:
+   - Maak een MySQL-database aan.
+   - Voer het `import.sql`-script uit om tabellen te maken en voorbeeldgegevens in te voegen.
+   - Werk `db.php` bij met uw databasegegevens:
      ```php
      $host = 'localhost';
-     $dbname = 'your_database_name';
-     $username = 'your_username';
-     $password = 'your_password';
+     $dbname = 'uw_database_naam';
+     $username = 'uw_gebruikersnaam';
+     $password = 'uw_wachtwoord';
      ```
 
-4. **File Permissions**:
-   - Ensure the web server has read/write permissions for the project directory.
+4. **Bestandsrechten**:
+   - Zorg ervoor dat de webserver lees-/schrijfrechten heeft voor de projectdirectory.
 
-5. **Access the App**:
-   - Open your browser and navigate to the project URL (e.g., `http://localhost/personal-budget-app/`).
+5. **Toegang tot de App**:
+   - Open uw browser en navigeer naar de project-URL (bijv. `http://localhost/personal-budget-app/`).
 
-## Usage
+---
 
-1. **Register**: Create a new account on the registration page.
-2. **Login**: Use your credentials to log in.
-3. **Dashboard**: View your budget summary, transactions, and charts.
-4. **Add Transaction**: Click "Add Transaction" to record new income or expense.
-5. **Edit/Delete**: Use the actions in the transactions table to modify or remove entries.
-6. **Theme Toggle**: Switch between light and dark themes using the button in the navbar.
+## Gebruik
 
-## Sample Data
+1. **Registreren**: Maak een nieuw account aan op de registratiepagina.
+2. **Inloggen**: Gebruik uw inloggegevens om in te loggen.
+3. **Dashboard**: Bekijk uw budgetoverzicht, transacties en grafieken.
+4. **Transactie Toevoegen**: Klik op "Transactie Toevoegen" om nieuwe inkomsten of uitgaven vast te leggen.
+5. **Bewerken/Verwijderen**: Gebruik de acties in de transactietabel om vermeldingen te wijzigen of te verwijderen.
+6. **Thema Wisselen**: Wissel tussen lichte en donkere thema's met de knop in de navigatiebalk.
 
-The `import.sql` includes sample users and transactions for testing:
-- Username: `testuser`, Password: `password123`
-- Username: `john_doe`, Password: `password123`
+---
 
-## File Structure
+## Voorbeeldgegevens
 
-- `index.php`: Home page
-- `login.php`: Login page
-- `register.php`: Registration page
-- `dashboard.php`: Main dashboard
-- `add_transaction.php`: Add new transaction
-- `edit_transaction.php`: Edit transaction
-- `delete_transaction.php`: Delete transaction
-- `transactions.php`: List all transactions
-- `logout.php`: Logout
-- `db.php`: Database connection
-- `import.sql`: Database schema and sample data
+Het `import.sql`-bestand bevat voorbeeldgebruikers en transacties voor testdoeleinden:
+- Gebruikersnaam: `testuser`, Wachtwoord: `password123`
+- Gebruikersnaam: `john_doe`, Wachtwoord: `password123`
 
-## Contributing
+---
 
-Feel free to fork the project and submit pull requests for improvements.
+## Bestandsstructuur
 
-## License
+- `index.php`: Startpagina
+- `login.php`: Inlogpagina
+- `register.php`: Registratiepagina
+- `dashboard.php`: Hoofddashboard
+- `add_transaction.php`: Nieuwe transactie toevoegen
+- `edit_transaction.php`: Transactie bewerken
+- `delete_transaction.php`: Transactie verwijderen
+- `transactions.php`: Lijst van alle transacties
+- `logout.php`: Uitloggen
+- `db.php`: Databaseverbinding
+- `import.sql`: Database-schema en voorbeeldgegevens
 
-This project is open-source and available under the MIT License.
+---
+
+## Bijdragen
+
+Voel je vrij om het project te fork'en en pull-requests in te dienen voor verbeteringen.
+
+---
+
+## Licentie
+
+Dit project is open-source en beschikbaar onder de MIT-licentie.
